@@ -5,5 +5,6 @@
   "paginate": {
     "default": 10,
     "max": 50
-  }
+  },
+  "mongodb": "mongodb://nodardev:Sl0wness@ds027779.mlab.com:27779/nodar"
 }
