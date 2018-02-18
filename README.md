@@ -11,6 +11,21 @@ This project uses [Feathers](http://feathersjs.com). An open source web framewor
 ## ToDo
 - Secure the page
 
+- Design Database
+  - nodes_mstr
+    - nodeId
+    - label
+    - hostname
+    - ipAddress
+    - walletAddress
+  - transactions
+    - nodeId
+    - txId
+    - timestamp
+    - txAmount
+    - txFee
+    - confirmations
+
 - Create user interface for managing node list
   - Allow the ability to paste a list, rather than having to manually add each node (maybe upload and parse a csv)
   - Buttons: add, update, delete, delete all 
