@@ -12,7 +12,7 @@ This project uses [Feathers](http://feathersjs.com). An open source web framewor
 - Secure the page
 
 - Design Database
-  - nodes_mstr
+  - nodesMstr
     - nodeId
     - label
     - hostname
@@ -29,7 +29,7 @@ This project uses [Feathers](http://feathersjs.com). An open source web framewor
     - confirmations
     - createdTimestamp
     - modifiedTimestamp
-  - nodes_details
+  - nodesDetails
     - nodeId
     - balance
     - status
