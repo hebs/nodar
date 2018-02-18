@@ -4,9 +4,38 @@
 
 ## About
 
+This project is just getting off the ground. We are currently laying outu the framework, and defining requirements. Feel free to drop us a line to let us know what features and functionality you would like to see in Nodar.
+
 This project uses [Feathers](http://feathersjs.com). An open source web framework for building modern real-time applications.
 
-This project is just getting off the ground. We are currently laying outu the framework, and defining requirements. Feel free to drop us a line to let us know what features and functionality you would like to see in Nodar.
+## ToDo
+- Secure the page
+
+- Create user interface for managing node list
+  -allow the ability to paste a list, rather than having to manually add each node (maybe upload and parse a csv)
+  -Buttons: add, update, delete, delete all 
+  -Fields: label, hostname, ip address, wallet address
+  -Upon saving, have it populate mongo db with entered information, but also have it retrieve historical balance and transaction data from explorer
+  
+- Create the following views:
+  - Main View:
+    - Node Label
+    - Status 
+    - Active Time 
+    - Last Seen
+    - Last Paid (time)
+    - Last Paid (block)
+    - Received Transactions (count)
+    - Received Transactions (total)
+    - Current Node Profit (balance minus 10,000)
+    - Current Total Node Balance
+  - Charts:
+    - Total Received Transactions per node (bar graph)
+    - Current Profit per node (bar graph)
+    - Average Payouts per hour (line graph)
+    
+    
+
 
 ## Getting Started
 
