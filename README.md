@@ -18,6 +18,8 @@ This project uses [Feathers](http://feathersjs.com). An open source web framewor
     - hostname
     - ipAddress
     - walletAddress
+    - createdTimestamp
+    - modifiedTimestamp
   - transactions
     - nodeId
     - txId
@@ -25,12 +27,25 @@ This project uses [Feathers](http://feathersjs.com). An open source web framewor
     - txAmount
     - txFee
     - confirmations
+    - createdTimestamp
+    - modifiedTimestamp
+  - nodes_details
+    - nodeId
+    - balance
+    - status
+    - activeTime
+    - lastSeen
+    - lastPaidTime
+    - lastPaidBlock
+    - modifiedTimestamp
+    - createdTimestamp
+    
 
 - Create user interface for managing node list
   - Allow the ability to paste a list, rather than having to manually add each node (maybe upload and parse a csv)
   - Buttons: add, update, delete, delete all 
   - Fields: label, hostname, ip address, wallet address
-  - Upon saving, have it populate mongo db with entered information, but also have it retrieve historical balance and transaction data from explorer
+  - Upon saving, have it populate db with entered information, but also have it retrieve historical balance and transaction data from explorer
   
 - Create the following views:
   - Main View:
