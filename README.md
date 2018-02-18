@@ -1,10 +1,12 @@
 # nodar
 
-> Heb&#39;s sweet node app
+> A web app to provide financial analysis for Smartcash Smartnodes. 
 
 ## About
 
 This project uses [Feathers](http://feathersjs.com). An open source web framework for building modern real-time applications.
+
+This project is just getting off the ground. We are currently laying outu the framework, and defining requirements. Feel free to drop us a line to let us know what features and functionality you would like to see in Nodar.
 
 ## Getting Started
 
