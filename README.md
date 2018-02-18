@@ -45,24 +45,28 @@ This project uses [Feathers](http://feathersjs.com). An open source web framewor
   - Allow the ability to paste a list, rather than having to manually add each node (maybe upload and parse a csv)
   - Buttons: add, update, delete, delete all 
   - Fields: label, hostname, ip address, wallet address
-  - Upon saving, have it populate db with entered information, but also have it retrieve historical balance and transaction data from explorer
+  - Upon saving, have it populate nodes_mstr with entered information, but also have it retrieve data from explorer and populate nodes_details and transactions
   
-- Create the following views:
+Views:
   - Main View:
-    - Node Label
-    - Status 
-    - Active Time 
-    - Last Seen
-    - Last Paid (time)
-    - Last Paid (block)
-    - Received Transactions (count)
+    - label
+    - status 
+    - activeTime 
+    - lastSeen
+    - astPaidTime
+    - lastPaidBlock
+    - receivedTransactionsCount
     - Received Transactions (total)
     - Current Node Profit (balance minus 10,000)
     - Current Total Node Balance
-  - Charts:
-    - Total Received Transactions per node (bar graph)
-    - Current Profit per node (bar graph)
-    - Average Payouts per hour (line graph)
+  - Node Details View: 
+- Charts:
+  - Total Received Transactions per node 
+    - bar graph
+  - Current Profit per node 
+    - bar graph
+  - Average Payouts per hour 
+    - line graph
     
     
 
