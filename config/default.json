@@ -6,5 +6,29 @@
     "default": 10,
     "max": 50
   },
-  "mongodb": "mongodb://nodardev:Sl0wness@ds027779.mlab.com:27779/nodar"
+  "mongodb": "mongodb://nodardev:Sl0wness@ds027779.mlab.com:27779/nodar",
+  "authentication": {
+    "secret": "faaa9bec0721ef2ff528faeaea2036729931b2d67436d73a79a87111bb5447b6ba694f6844e01a55d8b40b2744a0a5c2294c04b012a3b3470b534c9782fb0447b382b50654500e994c039146606c9112bf1c3cdb4cb335821f8083c6caff8a1ac5efcee13815632459bd0f8ba503c3e064327f320172725e625bf278daaf32eb6e19b0834908f9da30bf1f59ecfbece825f64f4bcf19465c71530c6e6d9adec3f2e5671408f3bd8d8b659f75961aeef4c65ba303f01ad95b11de2eda09c791efbf5c034de294db6fadeed675dc754ecced996c5c49647323d32de71410bb2097946bf498a2b470b013684e5da88031bacb1fa8a1d9f9dcf6ffc834c6b877c400",
+    "strategies": [
+      "jwt",
+      "local"
+    ],
+    "path": "/authentication",
+    "service": "users",
+    "jwt": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "subject": "anonymous",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "entity": "user",
+      "usernameField": "email",
+      "passwordField": "password"
+    }
+  }
 }
