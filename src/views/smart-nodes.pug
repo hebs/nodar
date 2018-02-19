@@ -1,19 +1,28 @@
 extends ./templates/layout.pug
-+ navigation
+
 block content
- table.table
-  thead
-    tr
-      th(scope='col') _id
-      th(scope='col') Address
-      th(scope='col') Sent
-      th(scope='col') Received
-      th(scope='col') Balance
-  tbody
-    each node in result.data
+  include ./includes/navigation.pug
+  table.table
+    thead
       tr
-        th(scope='row') #{node._id}
-        td #{node.address}
-        td #{node.content.sent}
-        td #{node.content.received}
-        td #{node.content.balance}
+        th(scope='col') _id
+        th(scope='col') Label
+        th(scope='col') Status
+        th(scope='col') Address
+        th(scope='col') Sent
+        th(scope='col') Received
+        th(scope='col') Balance
+    tbody
+      each node in result.data
+        tr
+          th(scope='row') #{node._id}
+          td #{node.label}
+          td #{node.status}
+          td #{node.address}
+          td #{node.content.sent}
+          td #{node.content.received}
+          td #{node.content.balance}
+
+block scripts
+  script.
+    console.log('TOFTB')
