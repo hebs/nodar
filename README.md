@@ -53,7 +53,7 @@ Views:
     - status 
     - activeTime 
     - lastSeen
-    - astPaidTime
+    - lastPaidTime
     - lastPaidBlock
     - receivedTransactionsCount
     - Received Transactions (total)
