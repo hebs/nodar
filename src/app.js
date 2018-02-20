@@ -15,7 +15,7 @@ const appHooks = require('./app.hooks');
 const channels = require('./channels');
 
 const mongoose = require('./mongoose');
-
+const updater = require('./updater');
 const authentication = require('./authentication');
 
 const app = express(feathers());
@@ -42,6 +42,9 @@ app.configure(authentication);
 app.configure(services);
 // Set up event channels (see channels.js)
 app.configure(channels);
+
+// Setup the smart node updater job
+app.configure(updater);
 
 // Configure a middleware for 404s and the error handler
 app.use(express.notFound());
