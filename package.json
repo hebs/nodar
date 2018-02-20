@@ -43,7 +43,6 @@
     "feathers-mongoose": "^6.1.0",
     "helmet": "^3.10.0",
     "mongoose": "^5.0.2",
-    "pug": "^2.0.0-rc.4",
     "serve-favicon": "^2.4.5",
     "winston": "^2.4.0"
   },
