@@ -5,7 +5,7 @@
 module.exports = function (app) {
   const mongooseClient = app.get('mongooseClient');
   const { Schema } = mongooseClient;
-  const smartNode = new Schema({
+  const smartNodes = new Schema({
     address: {
       type: String,
       required: true,
@@ -29,5 +29,5 @@ module.exports = function (app) {
     lean: true
   });
 
-  return mongooseClient.model('smartNode', smartNode);
+  return mongooseClient.model('smartNodes', smartNodes);
 };
