@@ -10,7 +10,17 @@ module.exports = function (app) {
       type: String,
       required: true,
       unique: true
-    }
+    },
+    label: {
+      type: String,
+      required: true,
+    },
+    owner_id: {
+      type: Schema.ObjectId,
+      ref: 'users',
+      required: true
+    },
+
   }, {
     timestamps: true,
     // Force this model to retuen JSON instead of a mongoos document
