@@ -4,7 +4,14 @@ const waitPeriod = 1000 * 60; // 1 min
 
 const getStuffFromCLI = (address) => {
   return new Promise((resolve, reject) => {
-    shell.echo(`Do some sync shell stuff to retrieve the data for this one address: ${shell.echo('Error: Git commit failed')}`);
+    // Use the `shell` const to envoke bash scripts.
+    // See: https://www.npmjs.com/package/shelljs
+    // We are doing this in JS here instead of straight up bash scripts
+    // because we have more control over our application logic here. We can
+    // more easily get things like `app.serivice("smart-nodes")` to
+    // read/update the DB. We can also use the async nature of JS to handle
+    // handle things more quickly.
+    shell.echo(`Do some sync shell stuff to retrieve the data for this one address: ${address}`);
     const data = { thing: 'thang' };
     resolve(data);
   });
